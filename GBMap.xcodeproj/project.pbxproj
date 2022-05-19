@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63165371FDF92B2657C1D076 /* Pods_GBMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7291E6713EF957C566D8EE90 /* Pods_GBMap.framework */; };
 		7530F31428353E3100A4796B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31328353E3100A4796B /* AppDelegate.swift */; };
 		7530F31628353E3100A4796B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31528353E3100A4796B /* SceneDelegate.swift */; };
-		7530F31828353E3100A4796B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31728353E3100A4796B /* MapViewController.swift */; };
+		7530F31828353E3100A4796B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31728353E3100A4796B /* ViewController.swift */; };
 		7530F31B28353E3100A4796B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31928353E3100A4796B /* Main.storyboard */; };
 		7530F31D28353E3200A4796B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31C28353E3200A4796B /* Assets.xcassets */; };
 		7530F32028353E3200A4796B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31E28353E3200A4796B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6852AF047D3AE8EA846E7188 /* Pods-GBMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.release.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.release.xcconfig"; sourceTree = "<group>"; };
-		7291E6713EF957C566D8EE90 /* Pods_GBMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530F31028353E3100A4796B /* GBMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530F31328353E3100A4796B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7530F31528353E3100A4796B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7530F31728353E3100A4796B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7530F31728353E3100A4796B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7530F31A28353E3100A4796B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7530F31C28353E3200A4796B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7530F31F28353E3200A4796B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7530F32128353E3200A4796B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAF2F91A89826047F624CAE9 /* Pods-GBMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.debug.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63165371FDF92B2657C1D076 /* Pods_GBMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +42,6 @@
 			children = (
 				7530F31228353E3100A4796B /* GBMap */,
 				7530F31128353E3100A4796B /* Products */,
-				DA92301609218D1E9D01ECF7 /* Pods */,
-				81E06498533A4EAAE6373AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,30 +58,13 @@
 			children = (
 				7530F31328353E3100A4796B /* AppDelegate.swift */,
 				7530F31528353E3100A4796B /* SceneDelegate.swift */,
-				7530F31728353E3100A4796B /* MapViewController.swift */,
+				7530F31728353E3100A4796B /* ViewController.swift */,
 				7530F31928353E3100A4796B /* Main.storyboard */,
 				7530F31C28353E3200A4796B /* Assets.xcassets */,
 				7530F31E28353E3200A4796B /* LaunchScreen.storyboard */,
 				7530F32128353E3200A4796B /* Info.plist */,
 			);
 			path = GBMap;
-			sourceTree = "<group>";
-		};
-		81E06498533A4EAAE6373AF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7291E6713EF957C566D8EE90 /* Pods_GBMap.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA92301609218D1E9D01ECF7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EAF2F91A89826047F624CAE9 /* Pods-GBMap.debug.xcconfig */,
-				6852AF047D3AE8EA846E7188 /* Pods-GBMap.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,11 +74,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7530F32428353E3200A4796B /* Build configuration list for PBXNativeTarget "GBMap" */;
 			buildPhases = (
-				E8F1F3E05A616413CCB274B6 /* [CP] Check Pods Manifest.lock */,
 				7530F30C28353E3100A4796B /* Sources */,
 				7530F30D28353E3100A4796B /* Frameworks */,
 				7530F30E28353E3100A4796B /* Resources */,
-				85D9D2B60B1070CD621B2FB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,54 +133,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		85D9D2B60B1070CD621B2FB8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8F1F3E05A616413CCB274B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GBMap-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7530F30C28353E3100A4796B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7530F31828353E3100A4796B /* MapViewController.swift in Sources */,
+				7530F31828353E3100A4796B /* ViewController.swift in Sources */,
 				7530F31428353E3100A4796B /* AppDelegate.swift in Sources */,
 				7530F31628353E3100A4796B /* SceneDelegate.swift in Sources */,
 			);
@@ -270,7 +202,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -331,7 +262,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -352,14 +282,12 @@
 		};
 		7530F32528353E3200A4796B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAF2F91A89826047F624CAE9 /* Pods-GBMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NDPBHQ9PJ;
-				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -382,14 +310,12 @@
 		};
 		7530F32628353E3200A4796B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6852AF047D3AE8EA846E7188 /* Pods-GBMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NDPBHQ9PJ;
-				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
