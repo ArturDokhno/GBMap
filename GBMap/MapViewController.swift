@@ -176,7 +176,6 @@ extension MapViewController: GMSMapViewDelegate {
         }
     }
     
-    /// Получает информацию о месте по его локации
     private func getInfo(by location: CLLocationCoordinate2D) {
         let cllocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
         geocoder.reverseGeocodeLocation(cllocation) { places, error in
