@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import PinLayout
 import GoogleMaps
 
 class MapViewController: UIViewController {
@@ -37,15 +36,9 @@ class MapViewController: UIViewController {
         configureLocationManager()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        configureLayout()
-    }
-    
     private func configureMap() {
         let camera = GMSCameraPosition.camera(withTarget: defaultLocation, zoom: mapZoom)
         mapView.camera = camera
-        mapView.configureCustomMapStyle()
         mapView.delegate = self
     }
     
@@ -219,20 +212,3 @@ extension MapViewController: CLLocationManagerDelegate {
 
 }
 
-extension MapViewController {
-    
-    private func configureLayout() {
-        mapView.pin.all()
-        
-        buttonLastRoute.pin
-            .left(5%).right(5%)
-            .top(20).height(46)
-        buttonStartTrack.pin
-            .left(5%).bottom(20)
-            .height(46).width(44%)
-        buttonEndTrack.pin
-            .right(5%).bottom(20)
-            .height(46).width(44%)
-        view.layoutIfNeeded()
-    }
-}

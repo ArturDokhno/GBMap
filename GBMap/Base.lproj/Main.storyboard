@@ -10,7 +10,7 @@
         <!--Карта-->
         <scene sceneID="e33-hC-doD">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="vCk-ZP-Ftg" customClass="MapViewController" customModule="Route_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="vCk-ZP-Ftg" customClass="MapViewController" customModule="GBMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RT1-RW-Zbg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
