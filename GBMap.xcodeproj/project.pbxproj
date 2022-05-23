@@ -9,21 +9,38 @@
 /* Begin PBXBuildFile section */
 		7530F31428353E3100A4796B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31328353E3100A4796B /* AppDelegate.swift */; };
 		7530F31628353E3100A4796B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31528353E3100A4796B /* SceneDelegate.swift */; };
-		7530F31828353E3100A4796B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31728353E3100A4796B /* ViewController.swift */; };
+		7530F31828353E3100A4796B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F31728353E3100A4796B /* MapViewController.swift */; };
 		7530F31B28353E3100A4796B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31928353E3100A4796B /* Main.storyboard */; };
 		7530F31D28353E3200A4796B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31C28353E3200A4796B /* Assets.xcassets */; };
 		7530F32028353E3200A4796B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530F31E28353E3200A4796B /* LaunchScreen.storyboard */; };
+		7556EA32283BB8A600950C7C /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556EA31283BB8A600950C7C /* RealmService.swift */; };
+		7556EA34283BB8C200950C7C /* LocalRouteFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */; };
+		7556EA36283BB8D400950C7C /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556EA35283BB8D400950C7C /* Coordinate.swift */; };
+		7556EA39283BBA6600950C7C /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA38283BBA6600950C7C /* GoogleMaps */; };
+		7556EA3B283BBA6600950C7C /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA3A283BBA6600950C7C /* GoogleMapsBase */; };
+		7556EA3D283BBA6600950C7C /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA3C283BBA6600950C7C /* GoogleMapsCore */; };
+		7556EA3F283BBA6600950C7C /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA3E283BBA6600950C7C /* GoogleMapsM4B */; };
+		7556EA41283BBA6600950C7C /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA40283BBA6600950C7C /* GooglePlaces */; };
+		7556EA44283BBAE800950C7C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA43283BBAE800950C7C /* Realm */; };
+		7556EA46283BBAE800950C7C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA45283BBAE800950C7C /* RealmSwift */; };
+		DD0EF633716F3B66D0A9F9CA /* Pods_GBMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713A055DE7542DEEBBF32BF6 /* Pods_GBMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB497D70952DB637DCC2EE6 /* Pods-GBMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.debug.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.debug.xcconfig"; sourceTree = "<group>"; };
+		713A055DE7542DEEBBF32BF6 /* Pods_GBMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530F31028353E3100A4796B /* GBMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530F31328353E3100A4796B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7530F31528353E3100A4796B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7530F31728353E3100A4796B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7530F31728353E3100A4796B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7530F31A28353E3100A4796B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7530F31C28353E3200A4796B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7530F31F28353E3200A4796B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7530F32128353E3200A4796B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7556EA31283BB8A600950C7C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRouteFactory.swift; sourceTree = "<group>"; };
+		7556EA35283BB8D400950C7C /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.release.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7556EA44283BBAE800950C7C /* Realm in Frameworks */,
+				7556EA39283BBA6600950C7C /* GoogleMaps in Frameworks */,
+				7556EA46283BBAE800950C7C /* RealmSwift in Frameworks */,
+				7556EA3D283BBA6600950C7C /* GoogleMapsCore in Frameworks */,
+				7556EA3F283BBA6600950C7C /* GoogleMapsM4B in Frameworks */,
+				7556EA41283BBA6600950C7C /* GooglePlaces in Frameworks */,
+				7556EA3B283BBA6600950C7C /* GoogleMapsBase in Frameworks */,
+				DD0EF633716F3B66D0A9F9CA /* Pods_GBMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681778F782D21249505A2002 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB497D70952DB637DCC2EE6 /* Pods-GBMap.debug.xcconfig */,
+				BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7530F30728353E3100A4796B = {
 			isa = PBXGroup;
 			children = (
 				7530F31228353E3100A4796B /* GBMap */,
 				7530F31128353E3100A4796B /* Products */,
+				681778F782D21249505A2002 /* Pods */,
+				A42A307360901E05A38E9C08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +95,24 @@
 			children = (
 				7530F31328353E3100A4796B /* AppDelegate.swift */,
 				7530F31528353E3100A4796B /* SceneDelegate.swift */,
-				7530F31728353E3100A4796B /* ViewController.swift */,
+				7556EA31283BB8A600950C7C /* RealmService.swift */,
+				7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */,
+				7556EA35283BB8D400950C7C /* Coordinate.swift */,
+				7530F31728353E3100A4796B /* MapViewController.swift */,
 				7530F31928353E3100A4796B /* Main.storyboard */,
 				7530F31C28353E3200A4796B /* Assets.xcassets */,
 				7530F31E28353E3200A4796B /* LaunchScreen.storyboard */,
 				7530F32128353E3200A4796B /* Info.plist */,
 			);
 			path = GBMap;
+			sourceTree = "<group>";
+		};
+		A42A307360901E05A38E9C08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				713A055DE7542DEEBBF32BF6 /* Pods_GBMap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +122,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7530F32428353E3200A4796B /* Build configuration list for PBXNativeTarget "GBMap" */;
 			buildPhases = (
+				C74A46DB9CE1BAA4BA6FE054 /* [CP] Check Pods Manifest.lock */,
 				7530F30C28353E3100A4796B /* Sources */,
 				7530F30D28353E3100A4796B /* Frameworks */,
 				7530F30E28353E3100A4796B /* Resources */,
+				D7AF6E443048FA1FAF9BAEB0 /* [CP] Embed Pods Frameworks */,
+				665F2089C578B9671A85FE4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GBMap;
+			packageProductDependencies = (
+				7556EA38283BBA6600950C7C /* GoogleMaps */,
+				7556EA3A283BBA6600950C7C /* GoogleMapsBase */,
+				7556EA3C283BBA6600950C7C /* GoogleMapsCore */,
+				7556EA3E283BBA6600950C7C /* GoogleMapsM4B */,
+				7556EA40283BBA6600950C7C /* GooglePlaces */,
+				7556EA43283BBAE800950C7C /* Realm */,
+				7556EA45283BBAE800950C7C /* RealmSwift */,
+			);
 			productName = GBMap;
 			productReference = 7530F31028353E3100A4796B /* GBMap.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +171,10 @@
 				Base,
 			);
 			mainGroup = 7530F30728353E3100A4796B;
+			packageReferences = (
+				7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */,
+				7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7530F31128353E3100A4796B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,14 +197,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		665F2089C578B9671A85FE4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C74A46DB9CE1BAA4BA6FE054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7AF6E443048FA1FAF9BAEB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMap/Pods-GBMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7530F30C28353E3100A4796B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7530F31828353E3100A4796B /* ViewController.swift in Sources */,
+				7556EA34283BB8C200950C7C /* LocalRouteFactory.swift in Sources */,
+				7530F31828353E3100A4796B /* MapViewController.swift in Sources */,
 				7530F31428353E3100A4796B /* AppDelegate.swift in Sources */,
 				7530F31628353E3100A4796B /* SceneDelegate.swift in Sources */,
+				7556EA32283BB8A600950C7C /* RealmService.swift in Sources */,
+				7556EA36283BB8D400950C7C /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +328,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +389,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -282,6 +410,7 @@
 		};
 		7530F32528353E3200A4796B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB497D70952DB637DCC2EE6 /* Pods-GBMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +439,7 @@
 		};
 		7530F32628353E3200A4796B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +488,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7556EA38283BBA6600950C7C /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			productName = GoogleMaps;
+		};
+		7556EA3A283BBA6600950C7C /* GoogleMapsBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			productName = GoogleMapsBase;
+		};
+		7556EA3C283BBA6600950C7C /* GoogleMapsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			productName = GoogleMapsCore;
+		};
+		7556EA3E283BBA6600950C7C /* GoogleMapsM4B */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			productName = GoogleMapsM4B;
+		};
+		7556EA40283BBA6600950C7C /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			productName = GooglePlaces;
+		};
+		7556EA43283BBAE800950C7C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7556EA45283BBAE800950C7C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7530F30828353E3100A4796B /* Project object */;
 }
