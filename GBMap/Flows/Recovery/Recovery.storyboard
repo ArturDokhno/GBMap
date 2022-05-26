@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recovery View Controller-->
+        <scene sceneID="E5B-PM-mmp">
+            <objects>
+                <viewController storyboardIdentifier="RecoveryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vqb-my-Ri5" customClass="RecoveryViewController" customModule="Route_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pfl-ve-OkK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-vR-0Ur">
+                                <rect key="frame" x="89" y="207" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-UN-5bR">
+                                <rect key="frame" x="132" y="313" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Восстановить пароль"/>
+                                <connections>
+                                    <action selector="buttonRecoveryTapped:" destination="vqb-my-Ri5" eventType="touchUpInside" id="WEA-gc-nSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iCJ-Eu-wDF"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonRecovery" destination="ZKZ-UN-5bR" id="vZJ-iv-n3U"/>
+                        <outlet property="router" destination="CeU-Op-iyd" id="HfG-Dh-AnG"/>
+                        <outlet property="textFieldLogin" destination="FlK-vR-0Ur" id="dvT-r0-8To"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8l6-bO-Eba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="CeU-Op-iyd" customClass="RecoveryRouter" customModule="Route_Tracker" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="11"/>
+        </scene>
+    </scenes>
+</document>

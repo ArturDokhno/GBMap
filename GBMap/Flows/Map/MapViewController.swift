@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PinLayout
 import GoogleMaps
 
 class MapViewController: UIViewController {
@@ -24,6 +25,7 @@ class MapViewController: UIViewController {
     private var tappedMarker: GMSMarker?
     private var locationManager: CLLocationManager?
     
+    /// Для хранения объекта маршрута и объекта, представляющего его путь
     private var route: GMSPolyline?
     private var routePath: GMSMutablePath?
     
@@ -36,9 +38,15 @@ class MapViewController: UIViewController {
         configureLocationManager()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        configureLayout()
+    }
+    
     private func configureMap() {
         let camera = GMSCameraPosition.camera(withTarget: defaultLocation, zoom: mapZoom)
         mapView.camera = camera
+        mapView.configureCustomMapStyle()
         mapView.delegate = self
     }
     
@@ -65,6 +73,7 @@ class MapViewController: UIViewController {
     
 }
 
+/// Содержит действия при нажатии на кнопки
 extension MapViewController {
     
     @IBAction func buttonCurrentTapped(_ sender: Any) {
@@ -132,10 +141,11 @@ extension MapViewController {
     
 }
 
+/// Содержит алерты
 extension MapViewController {
     
     private func showNeedStopTrackAlert() {
-        let alert = UIAlertController(title: "Остановка трекера", message: "В настоящее время Ваш трекер включен. Хотите отключить его перед отображением предыдущего маршрута?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Остановка трекера", message: "В настоящее время Ваш трекер включен. Хотите отключить его перед отображением предущего маршрута?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Отключить", style: .default, handler: { [weak self] action in
             self?.isTrackingWork = false
             self?.trackUserLocation(needTrackStart: false)
@@ -146,6 +156,7 @@ extension MapViewController {
     }
 }
 
+/// Расширяет MapViewController для работы с MapView
 extension MapViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
@@ -176,6 +187,7 @@ extension MapViewController: GMSMapViewDelegate {
         }
     }
     
+    /// Получает информацию о месте по его локации
     private func getInfo(by location: CLLocationCoordinate2D) {
         let cllocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
         geocoder.reverseGeocodeLocation(cllocation) { places, error in
@@ -187,8 +199,12 @@ extension MapViewController: GMSMapViewDelegate {
     
 }
 
+/// Расширяет MapViewController для отслеживания
+/// текущего местоположения
 extension MapViewController: CLLocationManagerDelegate {
     
+    /// Получает местоположение пользователя и
+    /// переводит центр карты в эту точку
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let myLocation = locations.first {
             addPointToRoute(by: myLocation)
@@ -196,6 +212,7 @@ extension MapViewController: CLLocationManagerDelegate {
         }
     }
     
+    /// Добавляет точку в маршрут движения пользователя
     private func addPointToRoute(by location: CLLocation) {
         guard let route = route,
             let routePath = routePath else {return }
@@ -206,8 +223,26 @@ extension MapViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("При получении местоположения возникли ошибки: \(error.localizedDescription)")
+        print("При получении местоположния возникли ошибки: \(error.localizedDescription)")
     }
 
+}
+
+extension MapViewController {
+    
+    private func configureLayout() {
+        mapView.pin.all()
+        
+        buttonLastRoute.pin
+            .left(5%).right(5%)
+            .top(20).height(46)
+        buttonStartTrack.pin
+            .left(5%).bottom(20)
+            .height(46).width(44%)
+        buttonEndTrack.pin
+            .right(5%).bottom(20)
+            .height(46).width(44%)
+        view.layoutIfNeeded()
+    }
 }
 

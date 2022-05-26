@@ -23,6 +23,26 @@
 		7556EA41283BBA6600950C7C /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA40283BBA6600950C7C /* GooglePlaces */; };
 		7556EA44283BBAE800950C7C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA43283BBAE800950C7C /* Realm */; };
 		7556EA46283BBAE800950C7C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7556EA45283BBAE800950C7C /* RealmSwift */; };
+		75A153AD283FBA03001C4C2A /* AbstractUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153AC283FBA03001C4C2A /* AbstractUserManager.swift */; };
+		75A153AF283FBA0D001C4C2A /* RealmUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153AE283FBA0D001C4C2A /* RealmUserManager.swift */; };
+		75A153B1283FBA14001C4C2A /* UserManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153B0283FBA14001C4C2A /* UserManagerFactory.swift */; };
+		75A153B4283FBA56001C4C2A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A153B3283FBA56001C4C2A /* Map.storyboard */; };
+		75A153B7283FBA6A001C4C2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153B6283FBA6A001C4C2A /* MainViewController.swift */; };
+		75A153B9283FBA73001C4C2A /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153B8283FBA72001C4C2A /* MainRouter.swift */; };
+		75A153BE283FBAAB001C4C2A /* ViewControllerNavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153BD283FBAAB001C4C2A /* ViewControllerNavigationExtension.swift */; };
+		75A153C3283FBAF6001C4C2A /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153C2283FBAF6001C4C2A /* BaseRouter.swift */; };
+		75A153C5283FBB02001C4C2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153C4283FBB02001C4C2A /* User.swift */; };
+		75A153CA283FBB86001C4C2A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A153C9283FBB86001C4C2A /* Login.storyboard */; };
+		75A153CD283FBB99001C4C2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153CC283FBB99001C4C2A /* LoginViewController.swift */; };
+		75A153CF283FBBA7001C4C2A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153CE283FBBA7001C4C2A /* LoginRouter.swift */; };
+		75A153D3283FBC2F001C4C2A /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A153D2283FBC2F001C4C2A /* Registration.storyboard */; };
+		75A153D5283FBC40001C4C2A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153D4283FBC40001C4C2A /* RegistrationViewController.swift */; };
+		75A153D7283FBC4E001C4C2A /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153D6283FBC4E001C4C2A /* RegistrationRouter.swift */; };
+		75A153D9283FBC5F001C4C2A /* Recovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A153D8283FBC5F001C4C2A /* Recovery.storyboard */; };
+		75A153DB283FBC6E001C4C2A /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153DA283FBC6E001C4C2A /* RecoveryViewController.swift */; };
+		75A153DD283FBC7C001C4C2A /* RecoveryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153DC283FBC7C001C4C2A /* RecoveryRouter.swift */; };
+		75A153E0283FBCF2001C4C2A /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 75A153DF283FBCF2001C4C2A /* PinLayout */; };
+		75A153E2283FBCF9001C4C2A /* GMSMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153E1283FBCF9001C4C2A /* GMSMapViewExtension.swift */; };
 		DD0EF633716F3B66D0A9F9CA /* Pods_GBMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713A055DE7542DEEBBF32BF6 /* Pods_GBMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +58,27 @@
 		7530F31F28353E3200A4796B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7530F32128353E3200A4796B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7556EA31283BB8A600950C7C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
-		7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRouteFactory.swift; sourceTree = "<group>"; };
+		7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalRouteFactory.swift; path = ../LocalRouteFactory.swift; sourceTree = "<group>"; };
 		7556EA35283BB8D400950C7C /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		75A153AC283FBA03001C4C2A /* AbstractUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractUserManager.swift; sourceTree = "<group>"; };
+		75A153AE283FBA0D001C4C2A /* RealmUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUserManager.swift; sourceTree = "<group>"; };
+		75A153B0283FBA14001C4C2A /* UserManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerFactory.swift; sourceTree = "<group>"; };
+		75A153B3283FBA56001C4C2A /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		75A153B6283FBA6A001C4C2A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75A153B8283FBA72001C4C2A /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		75A153BD283FBAAB001C4C2A /* ViewControllerNavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNavigationExtension.swift; sourceTree = "<group>"; };
+		75A153C2283FBAF6001C4C2A /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		75A153C4283FBB02001C4C2A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		75A153C9283FBB86001C4C2A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		75A153CC283FBB99001C4C2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75A153CE283FBBA7001C4C2A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		75A153D2283FBC2F001C4C2A /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		75A153D4283FBC40001C4C2A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		75A153D6283FBC4E001C4C2A /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		75A153D8283FBC5F001C4C2A /* Recovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recovery.storyboard; sourceTree = "<group>"; };
+		75A153DA283FBC6E001C4C2A /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		75A153DC283FBC7C001C4C2A /* RecoveryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryRouter.swift; sourceTree = "<group>"; };
+		75A153E1283FBCF9001C4C2A /* GMSMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewExtension.swift; sourceTree = "<group>"; };
 		BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.release.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +90,7 @@
 				7556EA44283BBAE800950C7C /* Realm in Frameworks */,
 				7556EA39283BBA6600950C7C /* GoogleMaps in Frameworks */,
 				7556EA46283BBAE800950C7C /* RealmSwift in Frameworks */,
+				75A153E0283FBCF2001C4C2A /* PinLayout in Frameworks */,
 				7556EA3D283BBA6600950C7C /* GoogleMapsCore in Frameworks */,
 				7556EA3F283BBA6600950C7C /* GoogleMapsM4B in Frameworks */,
 				7556EA41283BBA6600950C7C /* GooglePlaces in Frameworks */,
@@ -68,7 +108,6 @@
 				2CB497D70952DB637DCC2EE6 /* Pods-GBMap.debug.xcconfig */,
 				BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,18 +132,133 @@
 		7530F31228353E3100A4796B /* GBMap */ = {
 			isa = PBXGroup;
 			children = (
-				7530F31328353E3100A4796B /* AppDelegate.swift */,
-				7530F31528353E3100A4796B /* SceneDelegate.swift */,
-				7556EA31283BB8A600950C7C /* RealmService.swift */,
-				7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */,
-				7556EA35283BB8D400950C7C /* Coordinate.swift */,
-				7530F31728353E3100A4796B /* MapViewController.swift */,
-				7530F31928353E3100A4796B /* Main.storyboard */,
+				75A153BF283FBAB7001C4C2A /* App */,
+				75A153A8283FB9D5001C4C2A /* BusinessLogic */,
+				75A153C0283FBAE0001C4C2A /* Entity */,
+				75A153C6283FBB0F001C4C2A /* Flows */,
+				75A153BA283FBA8D001C4C2A /* Core */,
 				7530F31C28353E3200A4796B /* Assets.xcassets */,
 				7530F31E28353E3200A4796B /* LaunchScreen.storyboard */,
 				7530F32128353E3200A4796B /* Info.plist */,
 			);
 			path = GBMap;
+			sourceTree = "<group>";
+		};
+		75A153A8283FB9D5001C4C2A /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				75A153AB283FB9F6001C4C2A /* UserManager */,
+				7556EA31283BB8A600950C7C /* RealmService.swift */,
+				7556EA33283BB8C200950C7C /* LocalRouteFactory.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		75A153AB283FB9F6001C4C2A /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				75A153AC283FBA03001C4C2A /* AbstractUserManager.swift */,
+				75A153AE283FBA0D001C4C2A /* RealmUserManager.swift */,
+				75A153B0283FBA14001C4C2A /* UserManagerFactory.swift */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		75A153B2283FBA45001C4C2A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7530F31728353E3100A4796B /* MapViewController.swift */,
+				75A153B3283FBA56001C4C2A /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		75A153B5283FBA60001C4C2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7530F31928353E3100A4796B /* Main.storyboard */,
+				75A153B6283FBA6A001C4C2A /* MainViewController.swift */,
+				75A153B8283FBA72001C4C2A /* MainRouter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75A153BA283FBA8D001C4C2A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				75A153BB283FBA99001C4C2A /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		75A153BB283FBA99001C4C2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75A153BD283FBAAB001C4C2A /* ViewControllerNavigationExtension.swift */,
+				75A153E1283FBCF9001C4C2A /* GMSMapViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75A153BF283FBAB7001C4C2A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7530F31328353E3100A4796B /* AppDelegate.swift */,
+				7530F31528353E3100A4796B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		75A153C0283FBAE0001C4C2A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7556EA35283BB8D400950C7C /* Coordinate.swift */,
+				75A153C2283FBAF6001C4C2A /* BaseRouter.swift */,
+				75A153C4283FBB02001C4C2A /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		75A153C6283FBB0F001C4C2A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				75A153C7283FBB76001C4C2A /* Login */,
+				75A153D0283FBBB1001C4C2A /* Registration */,
+				75A153D1283FBBC2001C4C2A /* Recovery */,
+				75A153B5283FBA60001C4C2A /* Main */,
+				75A153B2283FBA45001C4C2A /* Map */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		75A153C7283FBB76001C4C2A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				75A153C9283FBB86001C4C2A /* Login.storyboard */,
+				75A153CC283FBB99001C4C2A /* LoginViewController.swift */,
+				75A153CE283FBBA7001C4C2A /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		75A153D0283FBBB1001C4C2A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				75A153D2283FBC2F001C4C2A /* Registration.storyboard */,
+				75A153D4283FBC40001C4C2A /* RegistrationViewController.swift */,
+				75A153D6283FBC4E001C4C2A /* RegistrationRouter.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		75A153D1283FBBC2001C4C2A /* Recovery */ = {
+			isa = PBXGroup;
+			children = (
+				75A153D8283FBC5F001C4C2A /* Recovery.storyboard */,
+				75A153DA283FBC6E001C4C2A /* RecoveryViewController.swift */,
+				75A153DC283FBC7C001C4C2A /* RecoveryRouter.swift */,
+			);
+			path = Recovery;
 			sourceTree = "<group>";
 		};
 		A42A307360901E05A38E9C08 /* Frameworks */ = {
@@ -142,6 +296,7 @@
 				7556EA40283BBA6600950C7C /* GooglePlaces */,
 				7556EA43283BBAE800950C7C /* Realm */,
 				7556EA45283BBAE800950C7C /* RealmSwift */,
+				75A153DF283FBCF2001C4C2A /* PinLayout */,
 			);
 			productName = GBMap;
 			productReference = 7530F31028353E3100A4796B /* GBMap.app */;
@@ -172,8 +327,9 @@
 			);
 			mainGroup = 7530F30728353E3100A4796B;
 			packageReferences = (
-				7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */,
+				7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
 				7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */,
+				75A153DE283FBCF2001C4C2A /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 7530F31128353E3100A4796B /* Products */;
 			projectDirPath = "";
@@ -190,8 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7530F32028353E3200A4796B /* LaunchScreen.storyboard in Resources */,
+				75A153D3283FBC2F001C4C2A /* Registration.storyboard in Resources */,
 				7530F31D28353E3200A4796B /* Assets.xcassets in Resources */,
 				7530F31B28353E3100A4796B /* Main.storyboard in Resources */,
+				75A153CA283FBB86001C4C2A /* Login.storyboard in Resources */,
+				75A153B4283FBA56001C4C2A /* Map.storyboard in Resources */,
+				75A153D9283FBC5F001C4C2A /* Recovery.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +422,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				7556EA34283BB8C200950C7C /* LocalRouteFactory.swift in Sources */,
+				75A153B7283FBA6A001C4C2A /* MainViewController.swift in Sources */,
 				7530F31828353E3100A4796B /* MapViewController.swift in Sources */,
+				75A153CD283FBB99001C4C2A /* LoginViewController.swift in Sources */,
+				75A153AD283FBA03001C4C2A /* AbstractUserManager.swift in Sources */,
+				75A153D7283FBC4E001C4C2A /* RegistrationRouter.swift in Sources */,
+				75A153DB283FBC6E001C4C2A /* RecoveryViewController.swift in Sources */,
+				75A153DD283FBC7C001C4C2A /* RecoveryRouter.swift in Sources */,
+				75A153B1283FBA14001C4C2A /* UserManagerFactory.swift in Sources */,
+				75A153CF283FBBA7001C4C2A /* LoginRouter.swift in Sources */,
+				75A153B9283FBA73001C4C2A /* MainRouter.swift in Sources */,
+				75A153D5283FBC40001C4C2A /* RegistrationViewController.swift in Sources */,
 				7530F31428353E3100A4796B /* AppDelegate.swift in Sources */,
 				7530F31628353E3100A4796B /* SceneDelegate.swift in Sources */,
+				75A153C5283FBB02001C4C2A /* User.swift in Sources */,
+				75A153BE283FBAAB001C4C2A /* ViewControllerNavigationExtension.swift in Sources */,
+				75A153C3283FBAF6001C4C2A /* BaseRouter.swift in Sources */,
+				75A153E2283FBCF9001C4C2A /* GMSMapViewExtension.swift in Sources */,
 				7556EA32283BB8A600950C7C /* RealmService.swift in Sources */,
 				7556EA36283BB8D400950C7C /* Coordinate.swift in Sources */,
+				75A153AF283FBA0D001C4C2A /* RealmUserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +599,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,7 +609,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,6 +629,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +639,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -490,7 +667,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */ = {
+		7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
 			requirement = {
@@ -506,32 +683,40 @@
 				kind = branch;
 			};
 		};
+		75A153DE283FBCF2001C4C2A /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		7556EA38283BBA6600950C7C /* GoogleMaps */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GoogleMaps;
 		};
 		7556EA3A283BBA6600950C7C /* GoogleMapsBase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GoogleMapsBase;
 		};
 		7556EA3C283BBA6600950C7C /* GoogleMapsCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GoogleMapsCore;
 		};
 		7556EA3E283BBA6600950C7C /* GoogleMapsM4B */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GoogleMapsM4B;
 		};
 		7556EA40283BBA6600950C7C /* GooglePlaces */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP.git" */;
+			package = 7556EA37283BBA6600950C7C /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GooglePlaces;
 		};
 		7556EA43283BBAE800950C7C /* Realm */ = {
@@ -543,6 +728,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7556EA42283BBAE800950C7C /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		75A153DF283FBCF2001C4C2A /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75A153DE283FBCF2001C4C2A /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
