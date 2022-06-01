@@ -43,6 +43,7 @@
 		75A153DD283FBC7C001C4C2A /* RecoveryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153DC283FBC7C001C4C2A /* RecoveryRouter.swift */; };
 		75A153E0283FBCF2001C4C2A /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 75A153DF283FBCF2001C4C2A /* PinLayout */; };
 		75A153E2283FBCF9001C4C2A /* GMSMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A153E1283FBCF9001C4C2A /* GMSMapViewExtension.swift */; };
+		75C6A02E28478EA4001BAE09 /* AppKeyConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A02D28478EA4001BAE09 /* AppKeyConstans.swift */; };
 		DD0EF633716F3B66D0A9F9CA /* Pods_GBMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713A055DE7542DEEBBF32BF6 /* Pods_GBMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		75A153DA283FBC6E001C4C2A /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		75A153DC283FBC7C001C4C2A /* RecoveryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryRouter.swift; sourceTree = "<group>"; };
 		75A153E1283FBCF9001C4C2A /* GMSMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewExtension.swift; sourceTree = "<group>"; };
+		75C6A02D28478EA4001BAE09 /* AppKeyConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeyConstans.swift; sourceTree = "<group>"; };
 		BC033ED0D5C7D4B07CCBAB3C /* Pods-GBMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMap.release.xcconfig"; path = "Target Support Files/Pods-GBMap/Pods-GBMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +207,7 @@
 			children = (
 				7530F31328353E3100A4796B /* AppDelegate.swift */,
 				7530F31528353E3100A4796B /* SceneDelegate.swift */,
+				75C6A02D28478EA4001BAE09 /* AppKeyConstans.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				75A153D7283FBC4E001C4C2A /* RegistrationRouter.swift in Sources */,
 				75A153DB283FBC6E001C4C2A /* RecoveryViewController.swift in Sources */,
 				75A153DD283FBC7C001C4C2A /* RecoveryRouter.swift in Sources */,
+				75C6A02E28478EA4001BAE09 /* AppKeyConstans.swift in Sources */,
 				75A153B1283FBA14001C4C2A /* UserManagerFactory.swift in Sources */,
 				75A153CF283FBBA7001C4C2A /* LoginRouter.swift in Sources */,
 				75A153B9283FBA73001C4C2A /* MainRouter.swift in Sources */,

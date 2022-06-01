@@ -11,6 +11,5 @@ class UserManagerFactory {
     
     func makeUserManager() -> AbstractUserManager {
         return RealmUserManager()
-    }
-    
+    }    
 }
